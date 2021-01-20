@@ -1,0 +1,13 @@
+---
+- name: Add users
+  user:
+    name: "{{ item.name }}"
+    password: "{{ item.password }}"
+    groups: wheel
+    append: yes
+    state: present
+    createhome: yes
+
+  loop:
+    - { name: 'user1', password: '$6$3WWNCCaiYutZWiyW$IlraVR92NuUNBhDeDNeeDJGe3AheE9A1X.PBEO1y0JYh3FluZ8S6tdk6kiAcIgAa/qUg7AlFNGwlTLmqIKZYm/' }
+    - { name: 'user2', password: '$6$AGpQJ4tPHaV7U4ep$V88ak/fmywAqv.tYZzRUBnoh/.50bevfRsrBktYFiIPNGfZiVBeqoyzzZgE.wbALM6EPSecaCByS6ShrfV0fc.' }

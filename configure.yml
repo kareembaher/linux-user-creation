@@ -1,0 +1,9 @@
+---
+- hosts: instances
+  become: yes
+  become_user: root
+  gather_facts: yes
+  remote_user: kbaher
+
+  roles:
+    - user-creation

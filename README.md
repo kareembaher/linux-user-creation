@@ -6,7 +6,7 @@ Hello, this repo is for creating multiusers for linux OS using Ansible.
 - You will need to install Ansible on you system, please refer to this URL https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
 - I used python 3 to encrypt the password to put it in the ansible playbook, to install python3 please refer to this URL https://computingforgeeks.com/generate-linux-user-encrypted-password-for-ansible/
 
-# How to use:
+## How to use:
 - First, you will need to edit the hosts file which is located in `/etc/ansible/hosts` and add the IPs or hostnames of the servers you want to add users on like that for example:
 ```
 [set-of-servers]
